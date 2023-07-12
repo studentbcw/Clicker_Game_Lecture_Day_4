@@ -1,0 +1,64 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: left;
+}
+
+.m-4 {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.m-2 {
+  margin: 20px;
+}
+
+.p-2 {
+  padding: 16px;
+}
+
+.selectable {
+  cursor: pointer;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.bg-light {
+  background-color: #d4eaf7;
+}
+
+.background-image {
+  background-image: url('assets/under_the_sea_fade.png');
+  background-size: cover;
+  background-position: bottom;
+}
+
+.treasure-img {
+  height: 45vh;
+}
+
+.gold-coin {
+  height: 60px;
+}
+
+.upgrade-images {
+  height: 25vh;
+}

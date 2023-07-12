@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Clicker Game</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="text-center background-image">
+  <header class="opac1">
+    <h1>Gold Miner</h1>
+  </header>
+  <main>
+    <div class="d-flex">
+      <img src="assets/goldCoin.png" alt="gold" class="gold-coin" />
+      <h1 class="m-2" id="gold-count">0</h1>
+    </div>
+    <div class="d-flex">
+      <h3>Click Value: <span id="click-value">1</span></h3>
+      <img onclick="getGold()" class="selectable treasure-img" src="assets/treasure_chest.png"
+        alt="click the treasure chest to get gold!" />
+    </div>
+
+
+    <!-- SECTION: Upgrades -->
+    <div class="d-flex justify-content-around">
+      <div class="d-flex align-items-center justify-content-around">
+        <img onclick="addBackpack()" src="assets/backpack.png" alt="backpack upgrade"
+          class="upgrade-images selectable" />
+        <div class="text-start bg-light p-2">
+          <p>Cost: <span id="backpack-price">100</span></p>
+          <p>Effect: +1</p>
+          <p>Quantity: <span id="backpack-count">0</span></p>
+        </div>
+      </div>
+      <div class="d-flex align-items-center justify-content-around">
+        <img onclick="getFishFriend()" src="assets/fish1.png" alt="backpack upgrade"
+          class="upgrade-images selectable m-2" />
+        <div class="text-start bg-light p-2">
+          <p>Cost: <span id="fish-price">600</span></p>
+          <p>Effect: Auto
+            <br />
+            +20 every 3s
+          </p>
+          <p>Quantity: <span id="fish-count">0</span></p>
+        </div>
+      </div>
+  </main>
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
