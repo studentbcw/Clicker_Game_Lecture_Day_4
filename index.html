@@ -7,19 +7,21 @@
   <title>Clicker Game</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
-<body class="text-center background-image">
+<!-- Add a background image class to the body -->
+<body class="text-center">
   <header class="opac1">
     <h1>Gold Miner</h1>
   </header>
   <main>
     <div class="d-flex">
-      <img src="assets/goldCoin.png" alt="gold" class="gold-coin" />
-      <h1 class="m-2" id="gold-count">0</h1>
+      <img src="" alt="gold" class="gold-coin" />
+      <!-- Add an id for gold-count -->
+      <h1 class="m-2" >0</h1>
     </div>
     <div class="d-flex">
-      <h3>Click Value: <span id="click-value">1</span></h3>
-      <img onclick="getGold()" class="selectable treasure-img" src="assets/treasure_chest.png"
+      <!-- Add an id for click-value to the span tag -->
+      <h3>Click Value: <span>1</span></h3>
+      <img onclick="getGold()" class="selectable treasure-img" src=""
         alt="click the treasure chest to get gold!" />
     </div>
 
@@ -27,24 +29,27 @@
     <!-- SECTION: Upgrades -->
     <div class="d-flex justify-content-around">
       <div class="d-flex align-items-center justify-content-around">
-        <img onclick="addBackpack()" src="assets/backpack.png" alt="backpack upgrade"
+        <!-- Add onclick elements for our functions to add upgrades -->
+        <img  src="" alt="backpack upgrade"
           class="upgrade-images selectable" />
         <div class="text-start bg-light p-2">
-          <p>Cost: <span id="backpack-price">100</span></p>
+          <!-- <p>Cost: <span id="backpack-price">100</span></p>
           <p>Effect: +1</p>
-          <p>Quantity: <span id="backpack-count">0</span></p>
+          <p>Quantity: <span id="backpack-count">0</span></p> -->
         </div>
       </div>
       <div class="d-flex align-items-center justify-content-around">
-        <img onclick="getFishFriend()" src="assets/fish1.png" alt="backpack upgrade"
+
+        <!-- Add onclick element to add upgrade -->
+        <img  src="" alt="backpack upgrade"
           class="upgrade-images selectable m-2" />
         <div class="text-start bg-light p-2">
-          <p>Cost: <span id="fish-price">600</span></p>
+          <!-- <p>Cost: <span id="fish-price">600</span></p>
           <p>Effect: Auto
             <br />
             +20 every 3s
           </p>
-          <p>Quantity: <span id="fish-count">0</span></p>
+          <p>Quantity: <span id="fish-count">0</span></p> -->
         </div>
       </div>
   </main>

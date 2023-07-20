@@ -46,7 +46,7 @@ html {
 }
 
 .background-image {
-  background-image: url('assets/under_the_sea_fade.png');
+  background-image: url("");
   background-size: cover;
   background-position: bottom;
 }
