@@ -8,20 +8,20 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <!-- Add a background image class to the body -->
-<body class="text-center">
+<body class="text-center background-image text-light">
   <header class="opac1">
-    <h1>Gold Miner</h1>
+    <h1>Kidnap Miners</h1>
   </header>
   <main>
     <div class="d-flex">
-      <img src="" alt="gold" class="gold-coin" />
+      <img src="https://kidcitystores.com/cdn/shop/files/colle2.jpg?v=1668766069&width=535" alt="gold" class="gold-coin" />
       <!-- Add an id for gold-count -->
-      <h1 class="m-2" >0</h1>
+      <h1 class="m-2" id = "Gold-count">0</h1>
     </div>
     <div class="d-flex">
       <!-- Add an id for click-value to the span tag -->
-      <h3>Click Value: <span>1</span></h3>
-      <img onclick="getGold()" class="selectable treasure-img" src=""
+      <h3>Click Value: <span id = "click-value">1</span></h3>
+      <img onclick="getGold()" class="selectable treasure-img" src="https://www.miracle-recreation.com/content/uploads/2018/11/Image-Header_Park.jpg"
         alt="click the treasure chest to get gold!" />
     </div>
 
@@ -30,10 +30,10 @@
     <div class="d-flex justify-content-around">
       <div class="d-flex align-items-center justify-content-around">
         <!-- Add onclick elements for our functions to add upgrades -->
-        <img  src="" alt="backpack upgrade"
+        <img  onclick ="getBackpack()" src="https://i.kym-cdn.com/entries/icons/facebook/000/004/473/free-candy.jpg" alt="backpack upgrade"
           class="upgrade-images selectable" />
         <div class="text-start bg-light p-2">
-          <!-- <p>Cost: <span id="backpack-price">100</span></p>
+          <p>Cost: <span id="backpack-price">100</span></p>
           <p>Effect: +1</p>
           <p>Quantity: <span id="backpack-count">0</span></p> -->
         </div>
@@ -44,7 +44,7 @@
         <img  src="" alt="backpack upgrade"
           class="upgrade-images selectable m-2" />
         <div class="text-start bg-light p-2">
-          <!-- <p>Cost: <span id="fish-price">600</span></p>
+         <p>Cost: <span id="fish-price">600</span></p>
           <p>Effect: Auto
             <br />
             +20 every 3s
